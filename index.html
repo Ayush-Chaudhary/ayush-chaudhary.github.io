@@ -1,1 +1,69 @@
-Hello World
+<!-- Start creating a personal website. The website should contain a background color, a photo on the top left corner, a link to various social media profiles below it with details about my education and address. On the right side of the page, we add Bio, research interests and publications. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <style>
+        body {
+            background-color: #bd8d67;
+        }
+        #left {
+            float: left;
+            width: 50%;
+        }
+        #right {
+            float: right;
+            width: 50%;
+        }
+        #left img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        #left a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            margin: 10px;
+        }
+        #left a:hover {
+            color: blue;
+        }
+        #left .social-links {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="left" style="width: 20%;">
+        <img src="attachments/profilePhoto.jpg" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;" />
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ayushch1183"><img src="attachments/linkedinlogo.webp" alt="LinkedIn" style="width: 30px; height: 30px;" /></a>
+            <a href="https://github.com/Ayush-Chaudhary?tab=repositories"><img src="attachments/githublogo.jpg" alt="Github" style="width: 30px; height: 30px; object-fit: cover;" /></a>
+        </div>
+        <!-- <h2>Education</h2> -->
+        <p><strong>University of Maryland, College Park</strong>
+        <br>MS in Machine Learning </p>
+        <p><strong>Indian Institute of Technology, Delhi</strong>
+        <br>B.Tech in Electrical Engineering</p>
+        <h2>Resume</h2>
+        <p>Download my<a href="attachments/Resume.pdf">Resume</a></p>
+        <!-- <h2>4321 Hartwick Rd</h2>
+        <p>123, XYZ Street, ABC City, Country</p> -->
+    </div>
+    <div id="right" style="width: 80%;">
+        <h2>Bio</h2>
+        <p>My name is Ayush Chaudhary, and I am a graduate student pursuing a Master of Science in Applied Machine Learning at the School of CMNS</p>
+        <h2>Research Interests</h2>
+        <p>Language Learning Models, Automated Speech Recognition, Recommendation Systems, Biomedical Imaging, Pattern Recognition, Computer Vision, Reinforcement Learning in Multi arm Bandits, Natural Language Processing, Multimodal Learning</p>
+        <h2>Skills</h2>
+        <p>My skill set encompasses a diverse range of programming languages and tools, including Python, C++, Java, C, Octave, and VHDL, as well as libraries such as Numpy, Pandas, Matplotlib, and frameworks like TensorFlow, PyTorch, and Keras. I am proficient in utilizing data analysis and visualization tools such as Tableau and Microsoft Azure, and I have experience with version control systems like Github. Moreover, I am well-versed in MATLAB, MS Office, and LATEX and have familiarity with Docker for containerization purposes.</p>
+        <!-- <h2>Publications</h2>
+        <p>1. Doe, J. (2020). Machine Learning for Beginners. Journal of Machine Learning, 1(1), 1-10.</p>
+        <p>2. Doe, J. (2020). Data Mining Techniques. Journal of Data Mining, 1(1), 1-10.</p> -->
+    </div>
+</body>
+
+</html>
