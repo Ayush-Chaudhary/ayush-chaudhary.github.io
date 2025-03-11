@@ -42,7 +42,9 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Ayush Chaudhary" width="80">
+          <div class="avatar-background">
+            <img src="./assets/images/ayush1.jpg" alt="Ayush Chaudhary" width="80">
+          </div>
         </figure>
 
         <div class="info-content">
@@ -257,86 +259,166 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">Portfolio</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <a href="https://mirage.umd.edu/" target="_blank">
+                <!-- <a href="https://mirage.umd.edu/" target="_blank">
                   <img src="./assets/images/mirage.png" alt="design icon" width="40">
-                </a>
+                </a> -->
+                <ion-icon name="pulse-outline"></ion-icon>
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Metrology automation</h4>
 
                 <p class="service-item-text">
-                  Graduate Research Assistant at <a href="https://mirage.umd.edu/" target="_blank">Mirage Lab</a>
+                  Graduate Research Assistant at Mirage Lab
                 </p>
+                <button class="details-btn" data-portfolio-btn="0">
+                  View Details
+                </button>
               </div>
 
             </li>
 
-            <!-- <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li> -->
-
-            <!-- <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li> -->
-<!-- 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <ion-icon name="code-outline"></ion-icon>
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">GitHub Codebase Summarizer</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Advanced RAG system for natural language querying of GitHub codebases.
                 </p>
+                <button class="details-btn" data-portfolio-btn="1">
+                  View Details
+                </button>
               </div>
 
-            </li> -->
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="cube-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Transformer-based 3D motion estimation</h4>
+
+                <p class="service-item-text">
+                  State-of-the-art motion estimation pipeline with 94.61% accuracy.
+                </p>
+                <button class="details-btn" data-portfolio-btn="2">
+                  View Details
+                </button>
+              </div>
+
+            </li>
 
           </ul>
 
         </section>
 
 
+        <!-- Portfolio Modal Container -->
+        <div class="portfolio-modal-container" data-portfolio-modal-container>
+
+          <div class="overlay" data-portfolio-overlay></div>
+
+          <!-- Metrology Automation Modal -->
+          <section class="portfolio-modal" data-portfolio-modal="0">
+
+            <button class="modal-close-btn" data-portfolio-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title">Metrology automation</h4>
+
+              <div>
+                <p>
+                  Developed a new pipeline using LSD, ElDet models, and a fine-tuned LLM (GPT-4) to automate dimension analysis from grayscale images. This method cuts measurement time by 95% per part and reduces manual programming from 6 hours to 8 minutes per design, while improving the uncertainty from 120 to 40 μm.
+                </p>
+                <p>
+                  Graduate Research Assistant at <a href="https://mirage.umd.edu/" target="_blank">Mirage Lab</a>
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- ML Resume Summary Modal -->
+          <section class="portfolio-modal" data-portfolio-modal="1">
+
+            <button class="modal-close-btn" data-portfolio-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title">GitHub Codebase Summarizer</h4>
+
+              <div>
+                <p>
+                  <strong>Advanced RAG System:</strong> Engineered a Retrieval-Augmented Generation (RAG) system leveraging OpenAI embeddings and LLMs to enable natural language querying of GitHub codebases, achieving context-aware code understanding through parse tree analysis.
+                </p>
+                <p>
+                  <strong>Intelligent Code Chunking:</strong> Developed a sophisticated code-chunking algorithm using Tree-sitter AST parsing to maintain semantic integrity of code snippets, optimizing for context retention with token-aware segmentation.
+                </p>
+                <p>
+                  <strong>Vector Database Implementation:</strong> Implemented a scalable vector search solution with Pinecone to enable high-dimensional semantic code retrieval, with namespace-based organization for efficient multi-repository management.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- 3D Motion Estimation Modal -->
+          <section class="portfolio-modal" data-portfolio-modal="2">
+
+            <button class="modal-close-btn" data-portfolio-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title">Transformer-based 3D motion estimation</h4>
+
+              <div>
+                <p>
+                  Engineered a transformer-based 3D motion estimation pipeline utilizing FlowFormer++ for dense optical flow, YOLOv8 for object detection, and GLPN for monocular depth estimation, optimizing scene understanding.
+                </p>
+                <p>
+                  Achieved 94.61% motion detection accuracy (MDA) and a 0.127 flow perturbance score, leveraging self-supervised learning and contrastive loss to enhance feature generalization across diverse video datasets.
+                </p>
+                <p>
+                  Improved 3D perception for applications in robotics, AR/VR, and autonomous systems for efficient fine-tuning, reducing computational cost while maintaining high fidelity motion tracking.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
         <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+        <section class="testimonials" style="display: none;">
 
           <!-- <h3 class="h3 testimonials-title">Testimonials</h3> -->
 
@@ -615,12 +697,9 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Tools & Libraries</h5>
+                <h5 class="h5">NLP & ML</h5>
                 <p class="timeline-text">
-                  <strong style="color: var(--vegas-gold);">MLOps:</strong> PyTorch, TensorFlow, Docker, Kubernetes<br>
-                  <strong style="color: var(--vegas-gold);">Cloud Computing:</strong> AWS<br>
-                  <strong style="color: var(--vegas-gold);">Databases:</strong> SQL<br>
-                  <strong style="color: var(--vegas-gold);">Other Tools:</strong> Matplotlib, Tableau, GitHub, HTML, LaTeX, Flutter
+                  LLMs, Retrieval-Augmented Generation (RAG), Embeddings, Vector Databases, PyTorch, TensorFlow, Transformers, Computer Vision, Generative AI
                 </p>
               </div>
 
@@ -629,11 +708,9 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Interests</h5>
+                <h5 class="h5">Tools & Tech</h5>
                 <p class="timeline-text">
-                  <strong style="color: var(--vegas-gold);">Fields:</strong> Computer Vision, Language Learning Models, Reinforcement Learning, Gen AI<br>
-                  <strong style="color: var(--vegas-gold);">Development:</strong> Backend Web Development, Software Development<br>
-                  <strong style="color: var(--vegas-gold);">Analysis:</strong> Statistical Analysis, Pattern Recognition
+                  Pinecone, Tree-sitter, AST Parsing, Anthropic AI, Code Analysis, AWS (S3, SageMaker, Lambda, API Gateway), MLflow, Docker, Kubernetes
                 </p>
               </div>
 
@@ -663,7 +740,11 @@
                 <span>June 2024 - Present</span>
 
                 <p class="timeline-text">
-                  Developed a new pipeline using LSD, ElDet models, and a fine-tuned LLM (GPT-4) to automate dimension analysis from grayscale images. This method cuts measurement time by 95% per part and reduces manual programming from 6 hours to 8 minutes per design, while improving the uncertainty from 120 to 40 μm.
+                  <ul class="experience-bullets">
+                    <li>Developed an <strong>AI-driven metrology pipeline</strong> integrating Line Segment Detector, ElDet CNN, and a fine-tuned LLM (GPT-4) to automate dimension analysis on grayscale images.</li>
+                    <li>Optimized the <strong>model training pipeline</strong> to generalize across diverse CAD designs, leveraging distributed training and CUDA-accelerated inference, achieving <strong>95%</strong> time reduction and improving uncertainty from <strong>120 μm to 40 μm</strong>.</li>
+                    <li>Enhanced system efficiency with <strong>parallelism strategies</strong> and MLFlow-tracked experiments, enabling rapid hyperparameter tuning and model optimization for real-time industrial applications.</li>
+                  </ul>
                 </p>
 
               </li>
@@ -675,7 +756,11 @@
                 <span>June 2022 - July 2022</span>
 
                 <p class="timeline-text">
-                  Launched a robust pipeline of aggregate functions on 100k data points, increasing report generation speed by 80% and improving accuracy in identifying potential money laundering activities by 30%. Model deployment automates manual tasks performed by analysts, saving approximately 1800 man hours annually.
+                  <ul class="experience-bullets">
+                    <li>Designed and optimized a <strong>scalable data processing pipeline</strong> for real-time fraud detection, leveraging parallel computing and vectorized operations to process <strong>100k+</strong> data points, boosting report generation speed by <strong>80%</strong>.</li>
+                    <li>Fine-tuned <strong>Copynet</strong> and <strong>GPT-2</strong> for financial anomaly detection, integrating transformer-based feature extraction to enhance money laundering risk assessment accuracy by <strong>30%</strong>.</li>
+                    <li>Developed an <strong>automated ML deployment pipeline</strong> using Docker, Kubernetes, and CI/CD workflows, eliminating manual intervention and saving <strong>1800+</strong> analyst hours annually.</li>
+                  </ul>
                 </p>
 
               </li>
@@ -687,7 +772,11 @@
                 <span>June 2021 - October 2021</span>
 
                 <p class="timeline-text">
-                  Worked for investment fund to implement systematic trading strategies using complex machine learning models. Used Decision tree algorithms like LGBM, XGBoost, Cataboost, and backtesting them using Python. From a corpus of 230 stocks, actual and predicted top 30 were compared, improved common top from 10 to 14. 
+                  <ul class="experience-bullets">
+                    <li>Implemented <strong>Random Forest, SVM, and RNNs</strong> to develop systematic trading strategies for an investment fund.</li>
+                    <li>Conducted extensive <strong>fine-tuning of decision tree algorithms</strong>, including LGBM, XGBoost, and Cataboost, using Python to evaluate the performance of trading strategies on historical market data of <strong>1 million</strong> data points.</li>
+                    <li>Analyzed a corpus of <strong>230 stocks</strong> and compared the actual top 30 stocks with the predicted stocks, optimizing the common top stock selection by <strong>50%</strong>, demonstrating increased accuracy of the time series financial market models.</li>
+                  </ul>
                 </p>
 
               </li>
@@ -711,12 +800,48 @@
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">Advanced Code Intelligence System with RAG</h4>
+
+              <span>Jan 2025 - Mar 2025</span>
+
+              <p class="timeline-text">
+                <ul class="experience-bullets">
+                  <li>Engineered a <strong>Retrieval-Augmented Generation (RAG) system</strong> leveraging Anthropic AI embeddings to enable natural language querying of GitHub codebases, achieving context-aware understanding through parse tree analysis.</li>
+                  <li>Developed a sophisticated <strong>code-chunking algorithm</strong> using Tree-sitter AST parsing to maintain semantic integrity of code snippets, optimizing for context retention with token-aware segmentation.</li>
+                  <li>Implemented a scalable <strong>vector search solution</strong> with Pinecone for high-dimensional semantic code retrieval, with namespace-based organization for efficient multi-repository management.</li>
+                </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AI-Powered Product Recommendation System on AWS</h4>
+
+              <span>Aug 2024 - Dec 2024</span>
+
+              <p class="timeline-text">
+                <ul class="experience-bullets">
+                  <li>Engineered an <strong>adaptive recommendation pipeline</strong> leveraging AWS SageMaker, integrating Neural Collaborative Filtering (NCF) and XGBoost to improve ranking precision.</li>
+                  <li>Optimized model deployment using <strong>AWS Lambda, API Gateway, and Step Functions</strong>, reducing inference latency by 30% and enabling real-time A/B testing with SageMaker Endpoint Variants.</li>
+                  <li>Implemented <strong>model drift detection</strong> via Amazon CloudWatch, S3 event triggers, and SageMaker Model Monitor, ensuring continuous retraining and adaptation to evolving user preferences.</li>
+                </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">Transformer-based 3D motion estimation</h4>
 
               <span>Nov 2023 - May 2024</span>
 
               <p class="timeline-text">
-                Developed a robust 3D motion estimation framework integrating FlowFormer++ for optical flow, YOLOv8 for object detection, and GLPN for depth estimation, achieving 94.61% MDA and 0.127 FDP. Enhanced navigation, AR/VR, surveillance, sports analytics, and healthcare with detailed motion analysis.
+                <ul class="experience-bullets">
+                  <li>Engineered a transformer-based 3D motion estimation pipeline utilizing <strong>FlowFormer++</strong> for dense optical flow, <strong>YOLOv8</strong> for object detection, and <strong>GLPN</strong> for monocular depth estimation.</li>
+                  <li>Achieved <strong>94.61% motion detection accuracy</strong> (MDA) and a 0.127 flow perturbance score, leveraging self-supervised learning and contrastive loss for feature generalization.</li>
+                  <li>Improved 3D perception for applications in robotics, AR/VR, and autonomous systems, reducing computational cost while maintaining high fidelity motion tracking.</li>
+                </ul>
               </p>
 
             </li>
@@ -728,7 +853,11 @@
               <span>Aug 2022 - Nov 2022</span>
 
               <p class="timeline-text">
-                Developed a Dynamic Multiarm Bandits algorithm improving portfolio performance by 20%, introduced resilience to distribution changes, and established an upper bound on arm elimination probability for enhanced algorithm effectiveness.
+                <ul class="experience-bullets">
+                  <li>Created an innovative algorithm using <strong>Dynamic Multiarm Bandits</strong> to optimize portfolio performance by <strong>20%</strong>.</li>
+                  <li>Remodelled a novel approach to make the exploratory MAB algorithm resilient to changes in the distribution.</li>
+                  <li>Performed extensive research and analysis to derive an upper bound on the probability of eliminating an arm with a <strong>modified mean probability distribution</strong>, ensuring the algorithm's effectiveness in various scenarios.</li>
+                </ul>
               </p>
 
             </li>
@@ -740,7 +869,11 @@
               <span>April 2021 - May 2021</span>
 
               <p class="timeline-text">
-                Created an intrusion detection algorithm utilizing transformer architecture and manifold learning. Explored various Manifold Learning Algorithms and identified Koopman Embedding as the most accurate. Developed transformers and integrated them with the selected manifold learning algorithm for enhanced intrusion detection capabilities.
+                <ul class="experience-bullets">
+                  <li>Created an intrusion detection algorithm utilizing <strong>transformer architecture</strong> and manifold learning.</li>
+                  <li>Explored various <strong>Manifold Learning Algorithms</strong> and identified Koopman Embedding as the most accurate.</li>
+                  <li>Developed transformers and integrated them with the selected manifold learning algorithm for enhanced intrusion detection capabilities.</li>
+                </ul>
               </p>
 
             </li>
@@ -752,7 +885,11 @@
               <span>November 2020 - December 2020</span>
 
               <p class="timeline-text">
-                Developed a dynamic memory allocator, utilizing Doubly Linked Lists (DLL) and Binary Search Trees (BST) for dynamic memory allocation, and implemented AVL Trees to enhance memory allocation efficiency. Employed defragmentation techniques to merge contiguous memory blocks, optimizing memory allocation processes.
+                <ul class="experience-bullets">
+                  <li>Developed a dynamic memory allocator, utilizing <strong>Doubly Linked Lists (DLL)</strong> and <strong>Binary Search Trees (BST)</strong> for dynamic memory allocation.</li>
+                  <li>Implemented <strong>AVL Trees</strong> to enhance memory allocation efficiency.</li>
+                  <li>Employed <strong>defragmentation techniques</strong> to merge contiguous memory blocks, optimizing memory allocation processes.</li>
+                </ul>
               </p>
 
             </li>
@@ -761,7 +898,7 @@
 
         </section>
       <section class="resume-link">
-        <a href="./downloads/resume.pdf" target="_blank" class="resume-download-link">
+        <a href="./downloads/MLNLPResume.pdf" target="_blank" class="resume-download-link">
           <button class="download-button" style="color: rgb(197, 179, 88); animation: button-animation 1s infinite;">Download Full Resume</button>
         </a>
       </section>
@@ -1260,7 +1397,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
 
   <!--
     - ionicon link

@@ -157,3 +157,61 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Portfolio modal variables
+const portfolioModalContainer = document.querySelector('[data-portfolio-modal-container]');
+const portfolioModalCloseBtn = document.querySelectorAll('[data-portfolio-close-btn]');
+const portfolioOverlay = document.querySelector('[data-portfolio-overlay]');
+const portfolioModalBtns = document.querySelectorAll('[data-portfolio-btn]');
+const portfolioModals = document.querySelectorAll('[data-portfolio-modal]');
+
+// Portfolio modal toggle function
+const portfolioModalFunc = function () {
+  portfolioModalContainer.classList.toggle('active');
+  portfolioOverlay.classList.toggle('active');
+  document.body.classList.toggle('modal-open');
+};
+
+// Add click event to all modal close buttons
+for (let i = 0; i < portfolioModalCloseBtn.length; i++) {
+  portfolioModalCloseBtn[i].addEventListener('click', function() {
+    // Hide all modals
+    for (let j = 0; j < portfolioModals.length; j++) {
+      portfolioModals[j].classList.remove('active');
+    }
+    portfolioModalFunc();
+  });
+}
+
+// Close modal when clicking on overlay
+if (portfolioOverlay) {
+  portfolioOverlay.addEventListener('click', function() {
+    // Hide all modals
+    for (let j = 0; j < portfolioModals.length; j++) {
+      portfolioModals[j].classList.remove('active');
+    }
+    portfolioModalFunc();
+  });
+}
+
+// Add click event to all portfolio buttons
+for (let i = 0; i < portfolioModalBtns.length; i++) {
+  portfolioModalBtns[i].addEventListener('click', function() {
+    const modalIndex = this.getAttribute('data-portfolio-btn');
+    const targetModal = document.querySelector(`[data-portfolio-modal="${modalIndex}"]`);
+    
+    // Hide all modals first
+    for (let j = 0; j < portfolioModals.length; j++) {
+      portfolioModals[j].classList.remove('active');
+    }
+    
+    // Show the selected modal
+    if (targetModal) {
+      targetModal.classList.add('active');
+      portfolioModalFunc();
+      console.log('Modal opened:', modalIndex);
+    } else {
+      console.error('Modal not found:', modalIndex);
+    }
+  });
+}

@@ -1,0 +1,202 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{url}
+\usepackage{parskip} 	
+\usepackage{bookmark} 
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=0.2in, bottom=0.2in]{geometry}
+\usepackage{tabularx} 
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{float}
+\usepackage{fontawesome5}
+\usepackage{hyperref} % Removed draft=false to avoid option clash
+
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+\usepackage{microtype} % Disable protrusion for footnotes
+\begin{document}
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{\href{https://ayush-chaudhary.github.io/}{Ayush Chaudhary}} \\[7.5pt]
+ayushch1183@gmail.com\ $|$ \ 
+in/ayushch1183\ $|$ \
+github.com/Ayush-Chaudhary% \href{https://ayush-chaudhary.github.io/}{Website}\ $|$ \
+\end{tabularx}
+
+% \section{Professional Summary}
+% \small
+% Highly motivated and skilled Machine Learning Engineer with a strong academic background and practical experience in developing and deploying ML models. Proven ability to improve accuracy and efficiency in real-world applications.
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\textbf{University of Maryland} & \hfill College Park, MD \\
+Masters of Science in Applied Machine Learning \textbf{(GPA: 4.0)} & \hfill Expected Graduation: May 2025 \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\textbf{Indian Institute of Technology} & \hfill New Delhi, India \\ 
+B.Tech in Electrical Engineering with Minor in Computer Science \textbf{(GPA 9.1/10)}  & \hfill May 2023 \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Languages} & \textbf{Proficient:} Python(5 yrs), C++(4 yrs), MATLAB, \textbf{Familiar:} C, Java, JavaScript, Dart \\
+\textbf{NLP \& ML} & LLMs, Retrieval-Augmented Generation (RAG), Embeddings, Vector Databases, PyTorch, TensorFlow, Transformers, Computer Vision, Generative AI \\
+\textbf{Tools \& Tech} & Pinecone, Tree-sitter, AST Parsing, Anthropic AI, Code Analysis, AWS (S3, SageMaker, Lambda, API Gateway), MLflow, Docker, Kubernetes \\
+\end{tabularx}
+% \section{Technical Skills}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \textbf{Languages} & \textbf{Proficient:} Python(5 yrs), C++(4 yrs), MATLAB, \textbf{Familiar:} C, Java, Java Script, Dart \\
+% \textbf{Tools \& Libraries} &  \textbf{MLOps:} PyTorch, TensorFlow, Docker, Kubernetes \textbf{Cloud Computing: }AWS \\
+%  & \textbf{Databases: }SQL \textbf{Other Tools:} Matplotlib, Tableau, GitHub, HTML, LaTeX, Flutter \\
+% \textbf{Interests}  &  Computer Vision, Language Learning Models, Reinforcement Learning, Gen AI, Backend Web Development, Software Development, Statistical Analysis, Pattern Recognition  \\
+% \end{tabularx}
+
+%Experience
+\section{Industry Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Mirage Lab, UMD} & \hfill College Park, MD \\
+Machine Learning Researcher & \hfill June 2024 - Present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    % \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+    %     \small
+    %     \item[-] Traditional metrology required manual measurement extraction, repeated for each part design using Hough Transforms. 
+    %     \item[-] The new pipeline uses \textbf{LSD}, \textbf{ElDet} models, and a \textbf{fine-tuned LLM (GPT-4)} to automate dimension analysis from grayscale images, generalizing for any design with linear, elliptical, and circular features.
+    %     \item[-] This method achieves a \textbf{95\%} reduction in measurement time per part, decreases manual programming time from \textbf{6 hours to 8 minutes} per design, and improves measurement uncertainty from \textbf{120 \(\mu\)m to 40 \(\mu\)m.}
+    % \end{itemize}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \small
+        % \item[-] Traditional metrology required manual measurement extraction, using \textbf{Hough Transforms}, lacking scalability.  
+        \item[-] Developed an \textbf{AI-driven metrology pipeline} integrating \textbf{Line Segment Detector}, \textbf{ElDet CNN}, and a \textbf{fine-tuned LLM (GPT-4)} to automate dimension analysis on grayscale images.%, leveraging \textbf{retrieval-augmented generation (RAG)} for improved feature recognition.  
+        \item[-] Optimized the \textbf{model training pipeline} to generalize across diverse CAD designs, leveraging \textbf{distributed training} and \textbf{CUDA-accelerated inference}, achieving \textbf{95\%} time reduction and improving uncertainty from \textbf{120 \(\mu\)m to 40 \(\mu\)m}.  
+        \item[-] Enhanced system efficiency with \textbf{parallelism strategies} and \textbf{MLFlow}-tracked experiments, enabling rapid \textbf{hyperparameter tuning} and \textbf{model optimization} for real-time industrial applications.  
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+% space
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Mastercard} & \hfill Gurgaon, India \\
+Machine Learning Engineer & \hfill June 2022 - July 2022 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    % \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+    %     \small
+    %     \item[-] Launched a \textbf{robust pipeline} of aggregate functions on \textbf{100k} data points, increasing the report generation speed by \textbf{80\%}.
+    %     \item[-] Integrated Large Language Models such as Copynet and \textbf{GPT2} to train the extracted features, resulting in improved accuracy and efficiency in \textbf{identifying potential money laundering activities} by \textbf{30\%}.
+    %     \item[-] Model deployment \textbf{automates manual tasks} performed by analysts, saving approximately \textbf{1800} man hours annually.
+    % \end{itemize}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \small
+        \item[-] Designed and optimized a \textbf{scalable data processing pipeline} for \textbf{real-time fraud detection}, leveraging \textbf{parallel computing} and \textbf{vectorized operations} to process \textbf{100k+} data points, boosting report generation speed by \textbf{80\%}.  
+        \item[-] Fine-tuned \textbf{Copynet} and \textbf{GPT-2} for \textbf{financial anomaly detection}, integrating \textbf{transformer-based feature extraction} to enhance \textbf{money laundering risk assessment} accuracy by \textbf{30\%}.  
+        \item[-] Developed an \textbf{automated ML deployment pipeline} using \textbf{Docker}, \textbf{Kubernetes}, and \textbf{CI/CD workflows}, eliminating manual intervention and saving \textbf{1800+} analyst hours annually.  
+    \end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+% space
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+%     \textbf{Zeus Knowledge Centre} & \hfill New Delhi, India \\
+%     Quantitative Researcher & \hfill June 2021 - Nov 2021 \\[3.75pt]
+%     \multicolumn{2}{@{}X@{}}{
+%     \begin{minipage}[t]{\linewidth}
+%         \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+%             \small
+%             \item[-] Implemented Random Forest, SVM, and RNNs to develop systematic \textbf{trading strategies} for an investment fund.
+%             \item[-] Conducted extensive \textbf{fine-tuning of decision tree algorithms}, including LGBM, XGBoost, and Cataboost, using Python to evaluate the performance of trading strategies on historical market data of \textbf{1 million} data points.
+%             \item[-] Analyzed a corpus of \textbf{230} stocks and compared the actual top 30 stocks with the predicted stocks. Optimized the common top stock selection by \textbf{50\%}, demonstrating \textbf{increased accuracy of the time series financial market} models.
+%         \end{itemize}
+%     \end{minipage}
+% }
+% \end{tabularx}
+% space
+\section{Research Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Advanced Code Intelligence System with RAG} & \hfill College Park, MD \\ 
+    Independent Research Project & \hfill Jan 2025 - Mar 2025 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \small
+            \item[-] Engineered a \textbf{Retrieval-Augmented Generation (RAG) system} leveraging \textbf{Anthropic AI embeddings} to enable natural language querying of GitHub codebases, achieving context-aware understanding through \textbf{parse tree analysis}.
+            \item[-] Developed a sophisticated \textbf{code-chunking algorithm} using \textbf{Tree-sitter AST parsing} to maintain semantic integrity of code snippets, optimizing for context retention with \textbf{token-aware segmentation}.
+            \item[-] Implemented a scalable \textbf{vector search solution} with \textbf{Pinecone} for high-dimensional semantic code retrieval, with \textbf{namespace-based organization} for efficient multi-repository management.
+        \end{itemize}
+    \end{minipage}
+    }
+    \end{tabularx}
+% space
+\unskip\vspace*{5px}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{AI-Powered Product Recommendation System on AWS} & \hfill College Park, MD \\
+    Research Assistant with Dr. Samet Ayhan & \hfill Aug 2024 - Dec 2024 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \small
+            \item[-] Engineered an \textbf{adaptive recommendation pipeline} leveraging \textbf{AWS SageMaker}, integrating \textbf{Neural Collaborative Filtering (NCF)} and \textbf{XGBoost} to improve ranking precision.  
+            \item[-] Optimized model deployment using \textbf{AWS Lambda, API Gateway, and Step Functions}, reducing inference latency by \textbf{30\%} and enabling \textbf{real-time A/B testing} with \textbf{SageMaker Endpoint Variants}.  
+            \item[-] Implemented \textbf{model drift detection} via \textbf{Amazon CloudWatch, S3 event triggers, and SageMaker Model Monitor}, ensuring continuous retraining and adaptation to evolving user preferences.  
+        \end{itemize}
+    \end{minipage}
+    }
+    \end{tabularx}
+% space
+% \unskip\vspace*{5px}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Handling Distribution change in Multiarm Bandits} & \hfill IIT Delhi, India \\
+% Research Assistant with Prof. Gourab Ghatak & \hfill Aug 2022 - Nov 2022 \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+%         \small
+%         \item[-] Created an innovative algorithm using \textbf{Dynamic Multiarm Bandits} to optimize portfolio performance by \textbf{20\%}. 
+%         \item[-] Remodelled a novel approach to make the exploratory MAB algorithm resilient to changes in the distribution.
+%         \item[-] Performed extensive research and analysis to derive an upper bound on the probability of eliminating an arm with a \textbf{modified mean probability distribution}, ensuring the algorithm's effectiveness in various scenarios.
+%     \end{itemize}
+% \end{minipage}
+% }
+% \end{tabularx}
+% space
+% \unskip\vspace*{5px}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{SEMG-based Gesture Recognition using 3D CNN} & \hfill IIT Delhi, India \\
+% Research Assistant with Prof. Lalan Kumar & \hfill May 2021 - July 2021 \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{
+% \begin{minipage}[t]{\linewidth}
+%     % \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+%     %     \small
+%     %     \item[-] Devised a \textbf{gesture recognition CNN} using isometric and isotonic finger gestures from 18 subjects.
+%     %     \item[-] Adapted a 3D-CNN architecture to better capture \textbf{spatial and temporal dependencies}, improving system robustness.
+%     %     \item[-] Compared 2D and 3D convolution approaches, achieving an \textbf{accuracy boost: 97.1\% to 98.6\%} with the 3D method.
+%     % \end{itemize}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+%         \small
+%         \item[-] Designed a \textbf{self-supervised learning framework} for SEMG-based gesture recognition, leveraging \textbf{contrastive learning} to enhance \textbf{spatial-temporal feature extraction}.  
+%         \item[-] Enhanced a \textbf{3D CNN architecture} by integrating \textbf{transformer encoders}, boosting robustness to inter-subject variability and reducing classification latency.  
+%         % \item[-] Achieved a \textbf{98.6\% accuracy}, outperforming 2D CNNs by \textbf{1.5\%}, and integrated \textbf{domain adaptation techniques} to improve cross-subject generalization.  
+%     \end{itemize}
+% \end{minipage}
+% }
+% \end{tabularx}
+\vfill
+
+\end{document}
