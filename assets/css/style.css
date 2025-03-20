@@ -2092,15 +2092,26 @@ body.modal-open {
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 10px;
+  color: var(--light-gray);
 }
 
 .experience-bullets li {
   margin-bottom: 8px;
   line-height: 1.5;
   list-style-type: disc;
+  color: var(--light-gray);
 }
 
 .experience-bullets li strong {
   color: var(--vegas-gold);
   font-weight: var(--fw-500);
+}
+
+/* Added styles for better text legibility in timeline sections */
+.timeline-item p {
+  color: var(--light-gray);
+}
+
+.timeline-item h4 {
+  color: var(--white-1);
 }
